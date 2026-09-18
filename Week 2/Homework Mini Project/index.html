@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interactive Profile Card</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Profil Mahasiswa</h1>
+        <nav>
+          <a class="nav-link" href="#tentang">Tentang</a>
+          <a class="nav-link" href="#keterampilan">Keterampilan</a>
+          <a class="nav-link" href="#kontak">Kontak</a>
+          <button id="btn-tema" class="button" style="margin-top:0; padding: 0.5rem 1rem;">Ganti Tema</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+        <div style="margin-bottom: 1rem;">
+            <p id="status" role="status" aria-live="polite">Belum ada proses.</p>
+            <button id="btn-coba-lagi" class="button" hidden>Coba Lagi</button>
+        </div>
+
+        <div class="card-list">
+            <section id="tentang" class="card">
+                <h2 id="nama-profil">Memuat...</h2>
+                <button id="btn-detail" class="button" aria-expanded="false">Lihat Detail</button>
+                
+                <div id="detail-profil" class="hidden" style="margin-top: 1rem;">
+                    <img src="assets/profile.jpg" alt="Foto Profil">
+                    <p id="deskripsi-profil"></p>
+                </div>
+            </section>
+
+            <section id="keterampilan" class="card">
+                <h2>Keterampilan</h2>
+                <form id="form-skill" novalidate style="margin-bottom: 1rem;">
+                    <input type="text" id="input-skill" placeholder="Ketik skill baru..." style="width: 100%; padding: 0.5rem; margin-bottom: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                    <small id="error-skill" class="error"></small>
+                    <button type="submit" class="button" style="width: 100%;">Tambah Skill</button>
+                </form>
+                <ul id="list-skill"></ul>
+            </section>
+
+            <section id="kontak" class="card">
+                <h2>Kontak</h2>
+                <a class="button" href="mailto:mahasiswa@example.com">Kirim email</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="container">
+      <p>2026 - Interactive Profile Card</p>
+    </footer>
+    
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

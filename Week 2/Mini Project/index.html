@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TechFix - Servis & Rakit PC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">TechFix</h1>
+            <button id="btn-menu" aria-expanded="false" aria-label="Buka menu navigasi">☰</button>
+            <nav id="nav-menu">
+                <a href="#hero">Beranda</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#faq">FAQ</a>
+                <a href="#kontak">Hubungi Teknisi</a>
+                <button id="btn-tema" class="tema-btn">🌙 Gelap</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Rakit PC Impianmu, Bebas Ribet</h2>
+            <p>Solusi andal untuk perbaikan hardware, upgrade komponen laptop, dan perakitan desktop rapi.</p>
+            <img src="assets/pcsetup.jpg" alt="Setup PC Desktop modern dengan manajemen kabel rapi">
+            <a class="cta-btn" href="#kontak">Konsultasi Sekarang</a>
+        </section>
+
+        <section id="layanan">
+            <h2>Spesialisasi Kami</h2>
+            <div class="filter-container">
+                <label for="filter-layanan">Pilih Kategori:</label>
+                <select id="filter-layanan">
+                    <option value="semua">Semua Layanan</option>
+                    <option value="rakit">Rakit Baru</option>
+                    <option value="perbaikan">Perbaikan & Upgrade</option>
+                </select>
+            </div>
+            <div id="container-layanan" class="flex-container"></div>
+        </section>
+
+        <section id="faq">
+            <h2>Tanya Jawab (FAQ)</h2>
+            <div class="faq-item">
+                <button class="faq-toggle" aria-expanded="false">Apakah ada garansi perakitan?</button>
+                <div class="faq-jawaban hidden">
+                    <p>Ya, kami memberikan garansi perakitan selama 30 hari. Garansi komponen mengikuti ketentuan distributor resmi.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-toggle" aria-expanded="false">Berapa lama proses upgrade laptop?</button>
+                <div class="faq-jawaban hidden">
+                    <p>Untuk upgrade RAM atau SSD, prosesnya dapat ditunggu sekitar 1 hingga 2 jam pengerjaan.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak">
+            <h2>Konsultasikan Masalah PC Anda</h2>
+            <form id="form-kontak" novalidate>
+                <label for="input-keluhan">Detail Keluhan / Kebutuhan Rakit:</label>
+                <textarea id="input-keluhan" rows="4" placeholder="Jelaskan masalah hardware Anda di sini..."></textarea>
+                <small id="error-keluhan" class="error-teks"></small>
+                
+                <button type="submit" class="cta-btn" style="border:none; cursor:pointer;">Kirim Konsultasi</button>
+                <p id="status-form" role="status" aria-live="polite" style="margin-top: 10px; font-weight: bold;"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechFix Bandung</p>
+    </footer>
+
+    <button id="btn-top" class="hidden" aria-label="Kembali ke atas">↑</button>
+</body>
+</html>

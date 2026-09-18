@@ -1,0 +1,9 @@
+{
+  "nama": "Profil Mahasiswa",
+  "deskripsi": "Saya mahasiswa D3 Teknik Informatika yang sedang belajar pemrograman web secara komprehensif.",
+  "keterampilan": [
+    { "id": 1, "nama": "HTML" },
+    { "id": 2, "nama": "CSS" },
+    { "id": 3, "nama": "Problem Solving" }
+  ]
+}
